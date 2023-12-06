@@ -6,12 +6,15 @@ package project;
 
 /**
  *
- * @author TEAM 7 IS
+ * @author M_Thaer
  */
 public class Project {
 
+    /**
+     * @param args the command line arguments
+     */
     public static void main(String[] args) {
-        System.out.println("Thaer");
+        System.out.println("mohammedhsbo");
     }
     
 }
