@@ -6,15 +6,12 @@ package project;
 
 /**
  *
- * @author M_Thaer
+ * @author TEAM 7 IS
  */
 public class Project {
 
-    /**
-     * @param args the command line arguments
-     */
     public static void main(String[] args) {
-        // TODO code application logic here
+        System.out.println("Thaer");
     }
     
 }
