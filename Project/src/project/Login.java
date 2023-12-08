@@ -46,7 +46,7 @@ public class Login extends javax.swing.JFrame {
 
         jPanel1.setLayout(null);
 
-        jPanel2.setBackground(new java.awt.Color(0, 0, 0,80));
+        jPanel2.setBackground(new java.awt.Color(0, 0, 0,20));
         jPanel2.setBorder(javax.swing.BorderFactory.createTitledBorder(null, "Login", javax.swing.border.TitledBorder.DEFAULT_JUSTIFICATION, javax.swing.border.TitledBorder.DEFAULT_POSITION, new java.awt.Font("Segoe UI", 1, 18), new java.awt.Color(204, 89, 0))); // NOI18N
         jPanel2.setToolTipText("");
 
@@ -60,6 +60,7 @@ public class Login extends javax.swing.JFrame {
 
         edt_pass.setBackground(new java.awt.Color(250, 250, 250));
 
+        btn_Login.setBackground(new java.awt.Color(204, 204, 204));
         btn_Login.setFont(new java.awt.Font("Segoe UI", 1, 14)); // NOI18N
         btn_Login.setText("Login");
         btn_Login.setHorizontalTextPosition(javax.swing.SwingConstants.CENTER);
@@ -78,17 +79,11 @@ public class Login extends javax.swing.JFrame {
         });
 
         lbl_signUp.setBackground(new java.awt.Color(204, 204, 204));
-        lbl_signUp.setFont(new java.awt.Font("Verdana", 1, 16)); // NOI18N
-        lbl_signUp.setForeground(new java.awt.Color(255, 255, 255));
+        lbl_signUp.setFont(new java.awt.Font("Verdana", 1, 10)); // NOI18N
+        lbl_signUp.setForeground(new java.awt.Color(51, 51, 255));
         lbl_signUp.setText("Sign up");
         lbl_signUp.setBorder(javax.swing.BorderFactory.createEmptyBorder(1, 1, 1, 1));
         lbl_signUp.addMouseListener(new java.awt.event.MouseAdapter() {
-            public void mouseEntered(java.awt.event.MouseEvent evt) {
-                lbl_signUpMouseEntered(evt);
-            }
-            public void mouseExited(java.awt.event.MouseEvent evt) {
-                lbl_signUpMouseExited(evt);
-            }
             public void mousePressed(java.awt.event.MouseEvent evt) {
                 lbl_signUpMousePressed(evt);
             }
@@ -113,7 +108,7 @@ public class Login extends javax.swing.JFrame {
                         .addGap(185, 185, 185)
                         .addComponent(btn_Login, javax.swing.GroupLayout.PREFERRED_SIZE, 101, javax.swing.GroupLayout.PREFERRED_SIZE))
                     .addGroup(jPanel2Layout.createSequentialGroup()
-                        .addGap(200, 200, 200)
+                        .addGap(211, 211, 211)
                         .addComponent(lbl_signUp)))
                 .addContainerGap(42, Short.MAX_VALUE))
         );
@@ -128,7 +123,7 @@ public class Login extends javax.swing.JFrame {
                 .addGroup(jPanel2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
                     .addComponent(jLabel1, javax.swing.GroupLayout.PREFERRED_SIZE, 64, javax.swing.GroupLayout.PREFERRED_SIZE)
                     .addComponent(edt_pass, javax.swing.GroupLayout.PREFERRED_SIZE, 54, javax.swing.GroupLayout.PREFERRED_SIZE))
-                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 16, Short.MAX_VALUE)
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 23, Short.MAX_VALUE)
                 .addComponent(btn_Login, javax.swing.GroupLayout.PREFERRED_SIZE, 47, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
                 .addComponent(lbl_signUp)
@@ -138,6 +133,8 @@ public class Login extends javax.swing.JFrame {
         jPanel1.add(jPanel2);
         jPanel2.setBounds(150, 110, 490, 310);
 
+        Label.setBackground(new java.awt.Color(205, 207, 201));
+        Label.setForeground(new java.awt.Color(51, 51, 255));
         Label.setMaximumSize(null);
         Label.setMinimumSize(null);
         jPanel1.add(Label);
@@ -161,7 +158,7 @@ public class Login extends javax.swing.JFrame {
         btn_Login.setBackground(Color.green);
     }//GEN-LAST:event_btn_LoginMouseEntered
     private void btn_LoginMouseExited(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_btn_LoginMouseExited
-        btn_Login.setBackground(Color.GRAY);
+        btn_Login.setBackground(Color.lightGray);
     }//GEN-LAST:event_btn_LoginMouseExited
 
     private void btn_LoginActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btn_LoginActionPerformed
@@ -181,13 +178,6 @@ public class Login extends javax.swing.JFrame {
         dispose();
         obj.setVisible(true);
     }//GEN-LAST:event_lbl_signUpMousePressed
-
-    private void lbl_signUpMouseEntered(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_lbl_signUpMouseEntered
-        lbl_signUp.setForeground(Color.green);
-    }//GEN-LAST:event_lbl_signUpMouseEntered
-    private void lbl_signUpMouseExited(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_lbl_signUpMouseExited
-        lbl_signUp.setForeground(Color.white);
-    }//GEN-LAST:event_lbl_signUpMouseExited
 
     public static void main(String args[]) {
         
