@@ -37,6 +37,7 @@ public class Login extends javax.swing.JFrame {
         edt_pass = new javax.swing.JPasswordField();
         btn_Login = new javax.swing.JButton();
         lbl_signUp = new javax.swing.JLabel();
+        jLabel3 = new javax.swing.JLabel();
         Label = new javax.swing.JLabel();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
@@ -61,7 +62,7 @@ public class Login extends javax.swing.JFrame {
         edt_pass.setBackground(new java.awt.Color(250, 250, 250));
 
         btn_Login.setBackground(new java.awt.Color(204, 204, 204));
-        btn_Login.setFont(new java.awt.Font("Segoe UI", 1, 14)); // NOI18N
+        btn_Login.setFont(new java.awt.Font("Segoe UI", 1, 16)); // NOI18N
         btn_Login.setText("Login");
         btn_Login.setHorizontalTextPosition(javax.swing.SwingConstants.CENTER);
         btn_Login.addMouseListener(new java.awt.event.MouseAdapter() {
@@ -79,8 +80,8 @@ public class Login extends javax.swing.JFrame {
         });
 
         lbl_signUp.setBackground(new java.awt.Color(204, 204, 204));
-        lbl_signUp.setFont(new java.awt.Font("Verdana", 1, 10)); // NOI18N
-        lbl_signUp.setForeground(new java.awt.Color(51, 51, 255));
+        lbl_signUp.setFont(new java.awt.Font("Verdana", 1, 12)); // NOI18N
+        lbl_signUp.setForeground(new java.awt.Color(0, 102, 0));
         lbl_signUp.setText("Sign up");
         lbl_signUp.setBorder(javax.swing.BorderFactory.createEmptyBorder(1, 1, 1, 1));
         lbl_signUp.addMouseListener(new java.awt.event.MouseAdapter() {
@@ -89,28 +90,33 @@ public class Login extends javax.swing.JFrame {
             }
         });
 
+        jLabel3.setText("don't have account");
+
         javax.swing.GroupLayout jPanel2Layout = new javax.swing.GroupLayout(jPanel2);
         jPanel2.setLayout(jPanel2Layout);
         jPanel2Layout.setHorizontalGroup(
             jPanel2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(jPanel2Layout.createSequentialGroup()
+                .addContainerGap()
                 .addGroup(jPanel2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                     .addGroup(jPanel2Layout.createSequentialGroup()
-                        .addContainerGap()
                         .addGroup(jPanel2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING, false)
                             .addComponent(jLabel1, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
                             .addComponent(jLabel2, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
                         .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
                         .addGroup(jPanel2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                             .addComponent(edt_text, javax.swing.GroupLayout.PREFERRED_SIZE, 354, javax.swing.GroupLayout.PREFERRED_SIZE)
-                            .addComponent(edt_pass, javax.swing.GroupLayout.PREFERRED_SIZE, 354, javax.swing.GroupLayout.PREFERRED_SIZE)))
-                    .addGroup(jPanel2Layout.createSequentialGroup()
-                        .addGap(185, 185, 185)
-                        .addComponent(btn_Login, javax.swing.GroupLayout.PREFERRED_SIZE, 101, javax.swing.GroupLayout.PREFERRED_SIZE))
-                    .addGroup(jPanel2Layout.createSequentialGroup()
-                        .addGap(211, 211, 211)
-                        .addComponent(lbl_signUp)))
-                .addContainerGap(42, Short.MAX_VALUE))
+                            .addComponent(edt_pass, javax.swing.GroupLayout.PREFERRED_SIZE, 354, javax.swing.GroupLayout.PREFERRED_SIZE))
+                        .addContainerGap(42, Short.MAX_VALUE))
+                    .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, jPanel2Layout.createSequentialGroup()
+                        .addGap(0, 0, Short.MAX_VALUE)
+                        .addGroup(jPanel2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING, false)
+                            .addComponent(btn_Login, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                            .addGroup(jPanel2Layout.createSequentialGroup()
+                                .addComponent(jLabel3)
+                                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                                .addComponent(lbl_signUp)))
+                        .addGap(156, 156, 156))))
         );
         jPanel2Layout.setVerticalGroup(
             jPanel2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
@@ -123,10 +129,12 @@ public class Login extends javax.swing.JFrame {
                 .addGroup(jPanel2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
                     .addComponent(jLabel1, javax.swing.GroupLayout.PREFERRED_SIZE, 64, javax.swing.GroupLayout.PREFERRED_SIZE)
                     .addComponent(edt_pass, javax.swing.GroupLayout.PREFERRED_SIZE, 54, javax.swing.GroupLayout.PREFERRED_SIZE))
-                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 23, Short.MAX_VALUE)
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 21, Short.MAX_VALUE)
                 .addComponent(btn_Login, javax.swing.GroupLayout.PREFERRED_SIZE, 47, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                .addComponent(lbl_signUp)
+                .addGroup(jPanel2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                    .addComponent(lbl_signUp)
+                    .addComponent(jLabel3))
                 .addGap(24, 24, 24))
         );
 
@@ -217,6 +225,7 @@ public class Login extends javax.swing.JFrame {
     private javax.swing.JTextField edt_text;
     private javax.swing.JLabel jLabel1;
     private javax.swing.JLabel jLabel2;
+    private javax.swing.JLabel jLabel3;
     private javax.swing.JPanel jPanel1;
     private javax.swing.JPanel jPanel2;
     private javax.swing.JLabel lbl_signUp;
