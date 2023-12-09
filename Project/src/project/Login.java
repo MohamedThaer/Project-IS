@@ -171,12 +171,18 @@ public class Login extends javax.swing.JFrame {
     }//GEN-LAST:event_btn_LoginMouseExited
 
     private void btn_LoginActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btn_LoginActionPerformed
-        if (edt_text.getText().equals("admin") && edt_pass.getText().equals("12345")) {
+        if (edt_text.getText().equals("admin") && edt_pass.getText().equals("123")) {
+            JOptionPane.showMessageDialog(this, "Login Success", "confirmation", 1);//where , message ,title
+            features obj = new features();
+            dispose();
+            obj.setVisible(true);
+        }else   if (edt_text.getText().equals("admin") && edt_pass.getText().equals("12345")) {
             JOptionPane.showMessageDialog(this, "Login Success", "confirmation", 1);//where , message ,title
             NewJFrame obj = new NewJFrame();
             dispose();
             obj.setVisible(true);
-        } else {
+        }
+        else {
             JOptionPane.showMessageDialog(this, "Login Failed", "confirmation", 0);
         }
 

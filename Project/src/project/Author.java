@@ -185,7 +185,7 @@ public class Author extends javax.swing.JFrame {
 
         // TODO add your handling code here:
         String category=txtcategory.getText();
-        String stauts=txrstaus.getSelectedItem().toString();
+     //   String stauts=txrstaus.getSelectedItem().toString();
         
         
     }//GEN-LAST:event_jButton2ActionPerformed
