@@ -81,7 +81,7 @@ public class Login extends javax.swing.JFrame {
 
         lbl_signUp.setBackground(new java.awt.Color(204, 204, 204));
         lbl_signUp.setFont(new java.awt.Font("Verdana", 1, 12)); // NOI18N
-        lbl_signUp.setForeground(new java.awt.Color(0, 102, 0));
+        lbl_signUp.setForeground(new java.awt.Color(51, 51, 255));
         lbl_signUp.setText("Sign up");
         lbl_signUp.setBorder(javax.swing.BorderFactory.createEmptyBorder(1, 1, 1, 1));
         lbl_signUp.addMouseListener(new java.awt.event.MouseAdapter() {
@@ -90,7 +90,7 @@ public class Login extends javax.swing.JFrame {
             }
         });
 
-        jLabel3.setText("don't have account");
+        jLabel3.setText("Don't have an account ?");
 
         javax.swing.GroupLayout jPanel2Layout = new javax.swing.GroupLayout(jPanel2);
         jPanel2.setLayout(jPanel2Layout);
@@ -110,13 +110,14 @@ public class Login extends javax.swing.JFrame {
                         .addContainerGap(42, Short.MAX_VALUE))
                     .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, jPanel2Layout.createSequentialGroup()
                         .addGap(0, 0, Short.MAX_VALUE)
-                        .addGroup(jPanel2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING, false)
-                            .addComponent(btn_Login, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                            .addGroup(jPanel2Layout.createSequentialGroup()
-                                .addComponent(jLabel3)
-                                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                                .addComponent(lbl_signUp)))
-                        .addGap(156, 156, 156))))
+                        .addComponent(jLabel3)
+                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                        .addComponent(lbl_signUp)
+                        .addGap(142, 142, 142))))
+            .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, jPanel2Layout.createSequentialGroup()
+                .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                .addComponent(btn_Login, javax.swing.GroupLayout.PREFERRED_SIZE, 182, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addGap(144, 144, 144))
         );
         jPanel2Layout.setVerticalGroup(
             jPanel2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
@@ -129,9 +130,9 @@ public class Login extends javax.swing.JFrame {
                 .addGroup(jPanel2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
                     .addComponent(jLabel1, javax.swing.GroupLayout.PREFERRED_SIZE, 64, javax.swing.GroupLayout.PREFERRED_SIZE)
                     .addComponent(edt_pass, javax.swing.GroupLayout.PREFERRED_SIZE, 54, javax.swing.GroupLayout.PREFERRED_SIZE))
-                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 21, Short.MAX_VALUE)
+                .addGap(18, 18, 18)
                 .addComponent(btn_Login, javax.swing.GroupLayout.PREFERRED_SIZE, 47, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 9, Short.MAX_VALUE)
                 .addGroup(jPanel2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
                     .addComponent(lbl_signUp)
                     .addComponent(jLabel3))
@@ -146,7 +147,7 @@ public class Login extends javax.swing.JFrame {
         Label.setMaximumSize(null);
         Label.setMinimumSize(null);
         jPanel1.add(Label);
-        Label.setBounds(0, 0, 790, 510);
+        Label.setBounds(0, 0, 800, 540);
 
         javax.swing.GroupLayout layout = new javax.swing.GroupLayout(getContentPane());
         getContentPane().setLayout(layout);
@@ -172,7 +173,7 @@ public class Login extends javax.swing.JFrame {
     private void btn_LoginActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btn_LoginActionPerformed
         if (edt_text.getText().equals("admin") && edt_pass.getText().equals("12345")) {
             JOptionPane.showMessageDialog(this, "Login Success", "confirmation", 1);//where , message ,title
-            features obj = new features();
+            NewJFrame obj = new NewJFrame();
             dispose();
             obj.setVisible(true);
         } else {
